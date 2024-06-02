@@ -2,8 +2,8 @@ import { DataTypes } from "sequelize";
 import { sequelize } from "../database/Sequelize";
 import { table } from "console";
 
-export const User = sequelize.define(
-  "User",
+export const Project = sequelize.define(
+  "Project",
   {
     id: {
       type: DataTypes.STRING(255),
@@ -16,25 +16,20 @@ export const User = sequelize.define(
       allowNull: false,
       field: "name",
     },
-    email: {
+    price: {
+      type: DataTypes.INTEGER(),
+      allowNull: false,
+      field: "price",
+    },
+    user_id: {
       type: DataTypes.STRING(255),
       allowNull: false,
-      field: "email",
-      unique: true,
-    },
-    createdAt: {
-      type: DataTypes.STRING(255),
-      allowNull: false,
-      field: "createdAt",
-    },
-    updatedAt: {
-      type: DataTypes.STRING(255),
-      allowNull: true,
-      field: "updatedAt",
+      field: "user_id",
     },
   },
   {
-    tableName: "users",
+    tableName: "projects",
     timestamps: false,
+    
   }
 );
