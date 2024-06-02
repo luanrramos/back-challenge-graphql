@@ -2,6 +2,7 @@ import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { User } from "./models/User";
 import { v4 } from "uuid";
+import { Project } from "./models/Projects";
 
 // A schema is a collection of type definitions (hence "typeDefs")
 // that together define the "shape" of queries that are executed against
@@ -10,9 +11,10 @@ const typeDefs = `#graphql
   # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
   type Project {
-    name: String
-    price: String
-   
+    id: String!
+    name: String!
+    price: String!
+    user: User
   }
 
   type User {
@@ -29,10 +31,13 @@ const typeDefs = `#graphql
 
   type Query {
     users: [User]
+    projects: [Project]
   }
 
   type Mutation {
     createUser(name: String, email: String): User
+
+    createProject(name: String, price: Int, user_id: String): Project
   }
 `;
 
@@ -41,6 +46,12 @@ const typeDefs = `#graphql
 const resolvers = {
   Query: {
     users: async () => await User.findAll(),
+    projects: async () =>
+      await Project.findAll({
+        include: {
+          all: true,
+        },
+      }),
   },
   Mutation: {
     createUser: async (_, data: { name: string; email: string }) => {
@@ -52,6 +63,25 @@ const resolvers = {
       });
       const saved = await user.save();
 
+      return saved;
+    },
+    createProject: async (
+      _,
+      data: {
+        name: string;
+        price: number;
+        user_id: string;
+      }
+    ) => {
+      const project = await Project.create({
+        id: v4(),
+        name: data.name,
+        price: data.price,
+        user_id: data.user_id,
+      });
+      const saved = await project.save({
+        fields: ["id", "name", "price", "user_id", "user"],
+      });
       return saved;
     },
   },
