@@ -28,7 +28,7 @@ const typeDefs = `#graphql
 
   # The "Query" type is special: it lists all of the available queries that
   # clients can execute, along with the return type for each. In this
-  # case, the "books" query returns an array of zero or more Books (defined above).
+  # case, the "user" query returns an array of zero or more users (defined above).
   type Query {
     books: [Book]
   }
@@ -44,3 +44,13 @@ const users = [
     email: 'a@gmail.com',
   },
 ];
+
+
+
+// Resolvers define how to fetch the types defined in your schema.
+// This resolver retrieves users from the "users" array above.
+const resolvers = {
+  Query: {
+    users: () => users,
+  },
+};
