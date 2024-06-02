@@ -1,12 +1,11 @@
 import { GraphQLObjectType, GraphQLID, GraphQLString } from 'graphql'
 
-export const UserType = new GraphQLObjectType({
-  name: "User",
+export const ProjectType = new GraphQLObjectType({
+  name: "Project",
   fields: () => ({
     id: { type: GraphQLID },
     name: { type: GraphQLString },
-    email: { type: GraphQLString },
+    price: { type: GraphQLString },
   })
 })
-
 
