@@ -12,7 +12,7 @@ const AppDataSource = new DataSource({
   username: "root",
   password: "password",
   logging: true,
-  synchronize: false,
+  synchronize: true,
   entities: [Users, Projects],
 });
 
