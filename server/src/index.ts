@@ -1,5 +1,6 @@
 import express from "express";
 import { graphqlHTTP } from "express-graphql";
+import { schema } from "./Schema"
 import cors from "cors";
 import { createConnection } from "typeorm";
 
@@ -19,10 +20,10 @@ const main = async () => {
   app.use(express.json());
   app.use(
     "/graphql",
-    // graphqlHTTP({
-    //   schema,
-    //   graphiql: true,
-    // })
+    graphqlHTTP({
+      schema,
+      graphiql: true,
+    })
   );
 
   app.listen(3001, () => {
