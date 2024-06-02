@@ -8,9 +8,22 @@ const typeDefs = `#graphql
   # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
   # This "Book" type defines the queryable fields for every book in our data source.
-  type Book {
-    title: String
-    author: String
+  type projects {
+    id: String
+    name: String
+    price: String
+    user: {
+      id: String
+      name: String
+      email: String
+    }
+
+
+  type user {
+    id: String
+    name: String
+    email: String
+  
   }
 
   # The "Query" type is special: it lists all of the available queries that
@@ -21,13 +34,13 @@ const typeDefs = `#graphql
   }
 `;
 
-const books = [
+const users = [
   {
-    title: 'The Awakening',
-    author: 'Kate Chopin',
+    name: 'Luan',
+    email: 'luan@gmail.com',
   },
   {
-    title: 'City of Glass',
-    author: 'Paul Auster',
+    name: 'lucas',
+    email: 'a@gmail.com',
   },
 ];
