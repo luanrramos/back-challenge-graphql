@@ -8,7 +8,7 @@ export const CREATE_PROJECT = {
     price: { type: GraphQLString },
   },
   resolver(parent: any, args: any) {
-      const { name, price } = args
-      
-  }
+    const { name, price } = args;
+    return args;
+  },
 };
