@@ -1,6 +1,6 @@
 # 🚀 SolarMarket Back-end Challenge
 
-<img src="Printscreen - challenge.png">
+<img src="screenshots-github/Printscreen - challenge.png">
 
 ## Challenge completed
 
