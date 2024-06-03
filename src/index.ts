@@ -6,7 +6,6 @@ import { Project } from "./models/Projects";
 
 const typeDefs = `#graphql
 
-
   type Project {
     id: String!
     name: String!
@@ -101,7 +100,6 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
-
 
 const { url } = await startStandaloneServer(server, {
   listen: { port: 4000 },

@@ -1,4 +1,4 @@
-create table if not exists users (
+CREATE TABLE IF NOT EXISTS users (
   id VARCHAR(255) primary key,
   name VARCHAR(255) not null,
   email VARCHAR(255) not null unique,
@@ -6,8 +6,7 @@ create table if not exists users (
   updatedAt VARCHAR(255)
 );
 
-create table if not exists projects (
-  
+CREATE TABLE IF NOT EXISTS projects (
     id VARCHAR(255) primary key,
     name VARCHAR(255) not null,
     price int not null,
