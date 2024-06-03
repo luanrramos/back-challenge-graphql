@@ -22,18 +22,17 @@ After do that. You must have to install the dependencies with the command:
     npm install
     // or yarn
 
-
 # Adicionar esquema SQL no Adminer
 
-Com o projeto rodando você agora deve configurar os esquemas SQL no Adminer:
+Configurar os esquemas SQL no Adminer:
 # 1. Copie o esquema de tabelas do projeto
 <img src="screenshots-github/01.png">
 
-# 2. Com o projeto rodando, entre na porta [localhost:5050](https://localhost:5050) e autentique-se com as credenciais demonstradas na imagem
-  Servidor: db
-  Usuário: dev
-  Senha: dev
-  Base de Dados: db
+# 2. Entre na URL [localhost:5050](https://localhost:5050) e autentique-se com as credenciais demonstradas na imagem
+    Servidor: db
+    Usuário: dev
+    Senha: dev
+    Base de Dados: db
 <img src="screenshots-github/02.png">
 
 # 3. Cole o esquema no Comando SQL
@@ -42,11 +41,8 @@ Com o projeto rodando você agora deve configurar os esquemas SQL no Adminer:
 <img src="screenshots-github/04.png">
 
 # Feito! Agora rode o projeto.
-Then, just start the API with the command:
-
     npm run dev
     or yarn dev
-   
 
 ### Queries Examples
 
