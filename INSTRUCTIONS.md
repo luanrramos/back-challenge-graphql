@@ -22,12 +22,6 @@ After do that. You must have to install the dependencies with the command:
     npm install
     // or yarn
 
-Then, just start the API with the command:
-
-    npm run dev
-    // or yarn dev
-
-Feito! Após rodar o projeto precisamos configurar os esquemas SQL no Adminer;
 
 # Adicionar esquema SQL no Adminer
 
@@ -47,9 +41,14 @@ Com o projeto rodando você agora deve configurar os esquemas SQL no Adminer:
 <img src="screenshots-github/03.png">
 <img src="screenshots-github/04.png">
 
-# Feito! Agora, reinicie e rode o novamente projeto.
+# Feito! Agora rode o projeto.
+Then, just start the API with the command:
 
-### Queries
+   ``` npm run dev
+    // or yarn dev
+    ```
+
+### Queries Examples
 
 #### Users: List all users
 <details><summary>Query Details</summary>
@@ -95,7 +94,7 @@ query buscarProjetos {
 </details>
 
 
-### Mutations
+### Mutations Examples
 #### CreateUser: create a user
 <details><summary>Mutation Details</summary>
 

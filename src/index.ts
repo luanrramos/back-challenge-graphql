@@ -9,7 +9,7 @@ const typeDefs = `#graphql
   type Project {
     id: String!
     name: String!
-    price: String!
+    price: Int!
     userId: String!
     User: User
   }

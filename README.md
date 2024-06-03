@@ -26,11 +26,15 @@ Here's a high-level overview of the project structure:
 ├── src/
 │   ├── index.ts            # Entry point of the application.
 │   └── database/
-│       ├── Sequelize.ts    # Database configuration and initialization.
+│       └── Sequelize.ts    # Database configuration and initialization.
 │
 │   └── models/
-│       ├── Projects.ts     # Contains the data model for projects.
-│       └── User.ts         # Contains the data model for users.
+│       ├── Projects.ts     # Data model for projects.
+│       └── User.ts         # Data model for users.
+|
+│   └── migrations/
+│       └── 01_setup.sql     # Project Migrations schema
+│               
 |
 ├── .gitignore              # Git ignore file.
 ├── package.json            # NPM package file.
@@ -69,4 +73,4 @@ Here's a high-level overview of the project structure:
 
 3. What would you do differently if you were allocated more time
 
-- Focaria nas boas práticas de programação do back-end, incluindo Clean Architerure, Design Patterns e S.O.L.I.D.
+- Focaria nas boas práticas de programação do back-end, incluindo Clean Architecture, Design Patterns e S.O.L.I.D.
