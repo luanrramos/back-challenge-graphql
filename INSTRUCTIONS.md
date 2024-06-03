@@ -48,3 +48,97 @@ Com o projeto rodando você agora deve configurar os esquemas SQL no Adminer:
 <img src="screenshots-github/04.png">
 
 # Feito! Agora, reinicie e rode o novamente projeto.
+
+### Queries
+
+#### Users: List all users
+<details><summary>Query Details</summary>
+
+<p>
+  
+```graphql
+query buscarUsuario {
+  users {
+    id
+    name
+    email
+  }
+}
+```
+
+</p>
+</details>
+
+#### Projects: List all projects
+<details><summary>Query Details</summary>
+
+<p>
+  
+```graphql
+query buscarProjetos {
+  projects {
+    id
+    name
+    price
+    User {
+      id
+      name
+      email
+      createdAt
+      updatedAt
+    }
+  }
+}
+```
+
+</p>
+</details>
+
+
+### Mutations
+#### CreateUser: create a user
+<details><summary>Mutation Details</summary>
+
+<p>
+  
+```graphql
+mutation CriarUsuario {
+  createUser(name: "John Doe", email: "jhondoe@gmail.com") {
+    id
+    email
+    name
+  }
+}
+```
+
+</p>
+</details>
+
+#### CreateProject: create a project
+<details><summary>Mutation Details</summary>
+
+<p>
+  
+```graphql
+mutation criarProjetos {
+  createProject(
+    name: "Projeto 1"
+    price: 1000
+    userId: "id do novo usuário"
+  ) {
+    id
+    name
+    price
+    User {
+      id
+      name
+      email
+      createdAt
+      updatedAt
+    }
+  }
+}
+```
+
+</p>
+</details>
