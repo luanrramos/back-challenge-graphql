@@ -4,8 +4,8 @@
 
 ## Challenge completed
 
-DESAFIO: [AQUI](https://github.com/luanrramos/front-challenge-spacex/blob/JR-luanramos/challenge.md)  
-INSTRUÇÕES: [AQUI](https://github.com/luanrramos/front-challenge-spacex/blob/JR-luanramos/INSTRUCTIONS.md)
+DESAFIO: [AQUI](https://github.com/luanrramos/back-challenge-graphql/blob/main/README.md)  
+INSTRUÇÕES: [AQUI](https://github.com/luanrramos/back-challenge-graphql/blob/JR-luanramos/INSTRUCTIONS.md)
 
 ## Technologies
 
@@ -69,4 +69,4 @@ Here's a high-level overview of the project structure:
 
 3. What would you do differently if you were allocated more time
 
-Focaria nas boas práticas de programação do back-end, incluindo Clean Architerure, Design Patterns e S.O.L.I.D.
+- Focaria nas boas práticas de programação do back-end, incluindo Clean Architerure, Design Patterns e S.O.L.I.D.
