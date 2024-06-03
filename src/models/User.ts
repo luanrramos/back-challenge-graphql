@@ -1,6 +1,7 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/Sequelize";
 import { table } from "console";
+import { Project } from "./Projects";
 
 export const User = sequelize.define(
   "User",
@@ -38,3 +39,5 @@ export const User = sequelize.define(
     timestamps: false,
   }
 );
+
+

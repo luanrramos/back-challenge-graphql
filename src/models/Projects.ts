@@ -22,10 +22,10 @@ export const Project = sequelize.define(
       allowNull: false,
       field: "price",
     },
-    user_id: {
+    userId: {
       type: DataTypes.STRING(255),
       allowNull: false,
-      field: "user_id",
+      field: "userId",
       references: {model: User, key: "id"}
     },
   },
