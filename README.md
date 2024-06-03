@@ -19,7 +19,7 @@ INSTRUÇÕES: [AQUI](https://github.com/luanrramos/back-challenge-graphql/blob/J
 
 ## **Project Structure**
 
-Here's a high-level overview of the project structure:
+Here's a intuitive overview of the project structure:
 
 ```
 [PROJECT]
