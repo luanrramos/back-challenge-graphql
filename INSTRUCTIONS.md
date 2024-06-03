@@ -44,9 +44,9 @@ Com o projeto rodando você agora deve configurar os esquemas SQL no Adminer:
 # Feito! Agora rode o projeto.
 Then, just start the API with the command:
 
-   ``` npm run dev
-    // or yarn dev
-    ```
+    npm run dev
+    or yarn dev
+   
 
 ### Queries Examples
 
