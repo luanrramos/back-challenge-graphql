@@ -34,13 +34,12 @@ Here's a intuitive overview of the project structure:
 |
 │   └── migrations/
 │       └── 01_setup.sql     # Project Migrations schema
-│               
+│
 |
 ├── .gitignore              # Git ignore file.
 ├── package.json            # NPM package file.
 ├── README.md               # This file.
 ├── INSTRUCTIONS.md         # Instructions for setup the environment of this project.
-├── schema.sql              # Schema SQL file containing queries database
 ├── docker-compose.yml      # YAML file is used to configure application services
 └── tsconfig.json           # TypeScript configuration file.
 ```
@@ -53,19 +52,16 @@ Here's a intuitive overview of the project structure:
 - **package.json**: NPM package file. You can modify this file to add or remove dependencies for your server.
 - **README.md**: This file. You can modify this file to provide more detailed instructions for your server.
 - **INSTRUCTIONS.md**: Instructions for setting up the environment of this project.
-- **schema.sql**: Schema SQL file containing queries for the database, you need to follow the [INSTRUCTIONS](https://github.com/luanrramos/back-challenge-graphql/blob/JR-luanramos/INSTRUCTIONS.md) to run the project saving queries database in Adminer Local instance.
 - **docker-compose.yml**: YAML file to configure application services.
 - **tsconfig.json**: TypeScript configuration file. You can modify this file to change the TypeScript compiler options for your codebase.
-
 
 ## Q.A
 
 1. How did you decide which technologies to use as part of your solution
 
-- Fazer este desafio foi um divisor de águas para mim. Embora minha especialidade fosse front-end, ao trabalhar nesse desafio, descobri que me dou super bem com o back-end também. Como não tinha muita experiência com tecnologias back-end, segui detalhadamente a documentação do [Apollo Server](https://www.apollographql.com/docs/apollo-server/). 
+- Fazer este desafio foi um divisor de águas para mim. Embora minha especialidade fosse front-end, ao trabalhar nesse desafio, descobri que me dou super bem com o back-end também. Como não tinha muita experiência com tecnologias back-end, segui detalhadamente a documentação do [Apollo Server](https://www.apollographql.com/docs/apollo-server/).
 
 - Baseado nas orientações, utilizei Node, Apollo GraphQL e TypeScript para o desenvolvimento. Para o banco de dados, optei pelo MySQL, pois já possuo afinidade com ele, utilizando o Sequelize como ORM. Essa abordagem me permitiu aplicar conhecimentos existentes enquanto aprendia novas tecnologias.
-
 
 2. Are there any improvements you could make to your submission
 
